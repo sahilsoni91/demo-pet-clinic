@@ -11,7 +11,7 @@
 	<artifactId>demo-pet-clinic-web</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>demo-pet-clinic-data</groupId>
+			<groupId>demo.petclinic</groupId>
 			<artifactId>demo-pet-clinic-data</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
