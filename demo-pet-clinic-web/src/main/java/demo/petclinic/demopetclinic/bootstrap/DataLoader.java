@@ -7,8 +7,6 @@ import demo.petclinic.demopetclinic.model.Owner;
 import demo.petclinic.demopetclinic.model.Vet;
 import demo.petclinic.demopetclinic.services.OwnerService;
 import demo.petclinic.demopetclinic.services.VetService;
-import demo.petclinic.demopetclinic.services.map.OwnerServiceMap;
-import demo.petclinic.demopetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,11 +14,11 @@ public class DataLoader implements CommandLineRunner {
 	private final OwnerService ownerService;
 	private final VetService vetService;
 	
-	public DataLoader() {
-		ownerService = new OwnerServiceMap();
-		vetService = new VetServiceMap();
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
-	
+
 	@Override
 	public void run(String... args) throws Exception {
 		Owner owner1 = new Owner();
