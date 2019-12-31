@@ -3,9 +3,9 @@ package demo.petclinic.demopetclinic.services.map;
 import java.util.Set;
 
 import demo.petclinic.demopetclinic.model.Pet;
-import demo.petclinic.demopetclinic.services.CrudService;
+import demo.petclinic.demopetclinic.services.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {
